@@ -1,0 +1,114 @@
+﻿@model ARJOU_V001.ViewModels.PedidoBuscaVM
+
+@{
+    ViewData["Title"] = "Pedidos";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center">@ViewData["Title"]</h1>
+
+    <div class="text-center mb-4">
+        <a asp-action="Create" class="btn btn-primary btn-lg">Crear Nuevo Pedido</a>
+    </div>
+
+    <form asp-controller="Pedidos" asp-action="Index" method="get" class="mb-5">
+        <div class="row">
+            @if (!User.IsInRole("Usuario"))
+            {
+                <div class="col-md-3">
+                    <label for="BPedidos" class="form-label">Pedido ID</label>
+                    <input type="text" id="BPedidos" name="BPedidos" value="@Model.BPedidos" class="form-control" placeholder="ID de Pedido" />
+                </div>
+            }
+
+            <div class="col-md-3">
+                <label for="BEstados" class="form-label">Estado</label>
+                <select asp-for="BEstados" asp-items="Model.LosEstados" name="BEstados" class="form-select">
+                    <option value="">Selecciona Estado</option>
+                </select>
+            </div>
+
+            @if (!User.IsInRole("Usuario"))
+            {
+                <div class="col-md-3">
+                    <label for="BFechaDesde" class="form-label">Fecha Desde</label>
+                    <input type="date" id="BFechaDesde" name="BFechaDesde" value="@Model.BFechaDesde?.ToString("yyyy-MM-dd")" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <label for="BFechaHasta" class="form-label">Fecha Hasta</label>
+                    <input type="date" id="BFechaHasta" name="BFechaHasta" value="@Model.BFechaHasta?.ToString("yyyy-MM-dd")" class="form-control" />
+                </div>
+            }
+
+            <div class="col-md-3 mt-3">
+                <label for="Orden" class="form-label">Ordenar por Fecha</label>
+                <select id="Orden" name="o" class="form-select">
+                    <option value="fechaAsc">Más antigua</option>
+                    <option value="fechaDesc">Más reciente</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-secondary btn-lg">Buscar</button>
+        </div>
+    </form>
+
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Imagen</th>
+                <th>Fecha Solicitud</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.LosPedidos)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>
+                        <img src="~/images/@item.ImagenReferencia" height="70" width="auto" asp-append-version="true" class="rounded shadow-sm" />
+                    </td>
+                    <td>@item.FechaSolicitud.ToString("dd/MM/yyyy")</td>
+                    <td>@item.Estado</td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            @if (!User.IsInRole("Usuario"))
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning mx-1">Editar</a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info mx-1">Detalles</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger mx-1">Eliminar</a>
+                            }
+                            else
+                            {
+                                if (!item.ConfirmadoPorUsuario)
+                                {
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning mx-1">Editar</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info mx-1">Detalles</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger mx-1">Eliminar</a>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Confirmado</span>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info mx-1">Detalles</a>
+                                }
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .table-hover tbody tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+</style>

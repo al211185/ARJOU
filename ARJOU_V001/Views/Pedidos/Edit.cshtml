@@ -1,0 +1,99 @@
+﻿@model ARJOU_V001.Models.Pedido
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pedido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <label asp-for="Id">ID:</label>
+            <input asp-for="Id" readonly />
+            <div class="form-group">
+                <label asp-for="EstiloDeseado" class="control-label"></label>
+                <select asp-for="EstiloDeseado" class="form-control">
+                    <option value="">Seleccione</option>
+                    <option value="Estilizada">Estilizada</option>
+                    <option value="Estructural">Estructural</option>
+                </select>
+                <span asp-validation-for="EstiloDeseado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColorDeseado" class="control-label"></label>
+                <input asp-for="ColorDeseado" class="form-control" />
+                <span asp-validation-for="ColorDeseado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LongitudDeseada" class="control-label"></label>
+                <input asp-for="LongitudDeseada" class="form-control" />
+                <span asp-validation-for="LongitudDeseada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescripcionAdicional" class="control-label"></label>
+                <input asp-for="DescripcionAdicional" class="form-control" />
+                <span asp-validation-for="DescripcionAdicional" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImagenReferencia" class="control-label"></label>
+
+                <!-- Mostrar la imagen actual si existe -->
+                @if (!string.IsNullOrEmpty(Model.ImagenReferencia))
+                {
+                    <div>
+                        <p>Imagen actual:</p>
+                        <img src="~/images/@Model.ImagenReferencia" alt="Imagen de Referencia" style="max-height: 100px;" />
+                    </div>
+                }
+                <!-- Campo para cargar una nueva imagen -->
+                <input type="file" name="Referencia" class="form-control" />
+
+                <!-- Campo oculto para almacenar la imagen existente si no se cambia -->
+                <input type="hidden" asp-for="ImagenReferencia" value="@Model.ImagenReferencia" />
+
+
+                <span asp-validation-for="ImagenReferencia" class="text-danger"></span>
+            </div>
+
+            @if (!User.IsInRole("Usuario"))
+            {
+                <div class="form-group">
+                    <label asp-for="FechaSolicitud" class="control-label"></label>
+                    <input asp-for="FechaSolicitud" class="control-label" readonly />
+                    <span asp-validation-for="FechaSolicitud" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PrecioEstimado" class="control-label"></label>
+                    <input asp-for="PrecioEstimado" class="form-control" />
+                    <span asp-validation-for="PrecioEstimado" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Estado" class="control-label"></label>
+                    <select asp-for="Estado" class="form-control" />
+                    <option value="Cotizando">Cotizando</option>
+                    <option value="EsperandoConfirmacion">Esperando confirmación</option>
+                    <option value="Peinando">Peinando</option>
+                    <option value="Estrcturando">Estructurando</option>
+                    <option value="Estilizando">Estilizando</option>
+                    <option value="Finalizada">Finalizada</option>
+                </div>
+            }
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

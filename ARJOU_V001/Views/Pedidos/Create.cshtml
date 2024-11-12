@@ -1,0 +1,76 @@
+﻿@model ARJOU_V001.ViewModels.PedidoVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Pedido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FechaSolicitud" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+            <div class="form-group">
+                <label asp-for="EstiloDeseado" class="control-label"></label>
+                <select asp-for="EstiloDeseado" class="form-control">
+                    <option value="">Seleccione</option>
+                    <option value="Estilizada">Estilizada</option>
+                    <option value="Estructural">Estructural</option>
+                </select>
+                <span asp-validation-for="EstiloDeseado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColorDeseado" class="control-label"></label>
+                <input asp-for="ColorDeseado" class="form-control" />
+                <span asp-validation-for="ColorDeseado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LongitudDeseada" class="control-label"></label>
+                <input asp-for="LongitudDeseada" class="form-control" />
+                <span asp-validation-for="LongitudDeseada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescripcionAdicional" class="control-label"></label>
+                <input asp-for="DescripcionAdicional" class="form-control" />
+                <span asp-validation-for="DescripcionAdicional" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Referencia" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="Referencia" class="custom-file-input" id="customFile" />
+                    <label class="custom-file-label" for="customFilel">Agregar imagen de referencia</label>
+                </div>
+                <span asp-validation-for="Referencia" class="text-danger"></span>
+            </div>
+            @* Campo oculto para PrecioEstimado con valor predeterminado *@
+            <input type="hidden" asp-for="PrecioEstimado" value="0.00" />
+
+            @* Campo oculto para Estado con valor predeterminado *@
+            <input type="hidden" asp-for="Estado" value="cotizando" />
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label")
+                .addClass("selected").html(fileName);
+        });
+    </script>
+}

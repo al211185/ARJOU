@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ARJOU_V001.props" />
+</Project>

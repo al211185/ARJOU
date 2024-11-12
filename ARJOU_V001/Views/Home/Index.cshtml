@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "ARJOU";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Estilos globales */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            background-color: #000000; /* Fondo negro */
+            overflow: hidden;
+        }
+
+        /* Animación del contenedor principal */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        /* Logo */
+        .logo-image {
+            max-width: 500px; /* Tamaño más grande */
+            margin-bottom: 20px;
+            animation: fadeInLogo 2s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        /* Texto principal */
+        .logo-text {
+            font-size: 2.5rem;
+            letter-spacing: 0.2em;
+            font-weight: 300; /* Texto más delgado */
+            color: #ffffff;
+            animation: fadeInText 2s ease-in-out 0.5s forwards;
+            opacity: 0;
+        }
+
+        /* Botón de exploración como enlace */
+        .button-container {
+            margin-top: 20px;
+            animation: fadeInButton 2s ease-in-out 1s forwards;
+            opacity: 0;
+        }
+
+        .explore-button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            background-color: transparent;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+        }
+
+            .explore-button:hover {
+                background-color: #FFFFFF;
+                color: #000000;
+            }
+
+        /* Animación de luces parpadeantes */
+        .light-animation {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+            animation: flicker 2s infinite alternate;
+            pointer-events: none;
+        }
+
+        /* Animaciones clave */
+        @@keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @@keyframes fadeInLogo {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @@keyframes fadeInText {
+            to {
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+        }
+
+        @@keyframes fadeInButton {
+            to {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+        }
+
+        @@keyframes flicker {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Imagen del logo -->
+        <img src="~/images/logo_trans.png" alt="Logo ARJOU" class="logo-image">
+
+        <!-- Texto principal de ARJOU -->
+        <div class="logo-text">ARJOU</div>
+
+        <!-- Enlace de exploración estilo botón -->
+        <div class="button-container">
+            <a class="explore-button" asp-area="" asp-controller="Pedidos" asp-action="Index">Mis Pedidos</a>
+        </div>
+    </div>
+
+    <!-- Efecto de luces parpadeantes -->
+    <div class="light-animation"></div>
+</body>
+</html>
