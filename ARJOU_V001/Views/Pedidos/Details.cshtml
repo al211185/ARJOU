@@ -2,79 +2,98 @@
 @model ARJOU_V001.Models.Pedido
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles del Pedido";
 }
 
-<h1>Details</h1>
+<h1 class="text-center font-weight-bold" style="color: #000;">Detalles del Pedido</h1>
 
-<div>
-    <h4>Pedido</h4>
+<div class="container mt-4 p-4" style="background-color: #fff; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+    <h4 class="text-uppercase" style="color: #000;">Pedido</h4>
     <hr />
+
     <dl class="row">
-        <dt class="col-sm-2">
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-9" style="color: #666;">
             @Html.DisplayFor(model => model.Id)
         </dd>
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
             @Html.DisplayNameFor(model => model.EstiloDeseado)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-9" style="color: #666;">
             @Html.DisplayFor(model => model.EstiloDeseado)
         </dd>
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
             @Html.DisplayNameFor(model => model.ColorDeseado)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-9" style="color: #666;">
             @Html.DisplayFor(model => model.ColorDeseado)
         </dd>
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
             @Html.DisplayNameFor(model => model.LongitudDeseada)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-9" style="color: #666;">
             @Html.DisplayFor(model => model.LongitudDeseada)
         </dd>
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
             @Html.DisplayNameFor(model => model.DescripcionAdicional)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-9" style="color: #666;">
             @Html.DisplayFor(model => model.DescripcionAdicional)
         </dd>
-        <dt class = "col-sm-2">
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
             @Html.DisplayNameFor(model => model.ImagenReferencia)
         </dt>
-        <dd class = "col-sm-10">
-            <img src="~/images/@Html.DisplayFor(model => model.ImagenReferencia)" />
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PrecioEstimado)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PrecioEstimado)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaSolicitud)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaSolicitud)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Estado)
+        <dd class="col-sm-9">
+            @if (!string.IsNullOrEmpty(Model.ImagenReferencia))
+            {
+                <div class="mb-3">
+                    <img src="~/images/@Model.ImagenReferencia" alt="Imagen de Referencia" style="max-height: 150px; border-radius: 8px; border: 1px solid #333;" />
+                </div>
+            }
+            else
+            {
+                <p style="color: #999;">No hay imagen de referencia</p>
+            }
         </dd>
 
-        @if (Model.PrecioEstimado > 0 && !Model.ConfirmadoPorUsuario)
-        {
-            <form asp-action="ConfirmarPedido" asp-route-id="@Model.Id" method="post">
-                <button type="submit">Confirmar Pedido</button>
-            </form>
-        }
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
+            @Html.DisplayNameFor(model => model.PrecioEstimado)
+        </dt>
+        <dd class="col-sm-9" style="color: #666;">
+            @Html.DisplayFor(model => model.PrecioEstimado)
+        </dd>
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
+            @Html.DisplayNameFor(model => model.FechaSolicitud)
+        </dt>
+        <dd class="col-sm-9" style="color: #666;">
+            @Html.DisplayFor(model => model.FechaSolicitud)
+        </dd>
+
+        <dt class="col-sm-3 text-right font-weight-bold" style="color: #333;">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class="col-sm-9" style="color: #666;">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
     </dl>
+
+    @if (Model.PrecioEstimado > 0 && !Model.ConfirmadoPorUsuario)
+    {
+        <form asp-action="ConfirmarPedido" asp-route-id="@Model.Id" method="post" class="text-center mt-3">
+            <button type="submit" class="btn btn-outline-dark" style="border-radius: 8px;">Confirmar Pedido</button>
+        </form>
+    }
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+<div class="text-center mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-dark mr-2" style="border-radius: 8px;">Editar</a>
+    <a asp-action="Index" class="btn btn-outline-dark" style="border-radius: 8px;">Volver a la Lista</a>
 </div>

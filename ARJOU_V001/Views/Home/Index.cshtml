@@ -133,9 +133,18 @@
         <div class="logo-text">ARJOU</div>
 
         <!-- Enlace de exploración estilo botón -->
-        <div class="button-container">
-            <a class="explore-button" asp-area="" asp-controller="Pedidos" asp-action="Index">Mis Pedidos</a>
-        </div>
+        @if (User.IsInRole("Usuario"))
+        {
+            <div class="button-container">
+                <a class="explore-button" asp-area="" asp-controller="Pedidos" asp-action="Index">Mis Pedidos</a>
+            </div>
+        }
+        else
+        {
+            <div class="button-container">
+                <a class="explore-button" asp-area="" asp-controller="Pedidos" asp-action="Index">Pedidos</a>
+            </div>
+        }
     </div>
 
     <!-- Efecto de luces parpadeantes -->

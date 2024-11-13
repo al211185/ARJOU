@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\wwwroot\\images\\20241030084426636.webp||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\wwwroot\\images\\20241030084426636.webp||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\wwwroot\\images\\20241030083351783.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\wwwroot\\images\\20241030083351783.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,20 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\viewmodels\\pedidobuscavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\viewmodels\\pedidobuscavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Pedido/sa/SqlTable/dbo.PedidoSet.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\views\\pedidos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\migrations\\pedido\\20241030141822_mig00.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|solutionrelative:arjou_v001\\migrations\\pedido\\20241030141822_mig00.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_User/sa/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFC6C193-7D02-4619-8DE0-614B6D3A1260}|ARJOU_V001\\ARJOU_V001.csproj|c:\\users\\dell\\desktop\\arjou\\arjou_v001\\arjou_v001\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,90 +104,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\appsettings.json",
-              "RelativeDocumentMoniker": "ARJOU_V001\\appsettings.json",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\appsettings.json",
-              "RelativeToolTip": "ARJOU_V001\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-11T00:28:03.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ARJOU_V001\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAwJAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAIwJAAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T14:56:27.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.PedidoSet.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Pedido/sa/SqlTable/dbo.PedidoSet.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Pedido/sa/SqlTable/dbo.PedidoSet.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-30T14:22:23.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20241030141822_Mig00.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Migrations\\Pedido\\20241030141822_Mig00.cs",
-              "RelativeDocumentMoniker": "ARJOU_V001\\Migrations\\Pedido\\20241030141822_Mig00.cs",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Migrations\\Pedido\\20241030141822_Mig00.cs",
-              "RelativeToolTip": "ARJOU_V001\\Migrations\\Pedido\\20241030141822_Mig00.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T14:18:23.02Z"
+              "WhenOpened": "2024-11-13T04:14:31.484Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "20241030084426636.webp",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\wwwroot\\images\\20241030084426636.webp",
+              "RelativeDocumentMoniker": "ARJOU_V001\\wwwroot\\images\\20241030084426636.webp",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\wwwroot\\images\\20241030084426636.webp",
+              "RelativeToolTip": "ARJOU_V001\\wwwroot\\images\\20241030084426636.webp",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-13T04:13:05.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20241030083351783.jpg - Bitmap [703x1000, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\wwwroot\\images\\20241030083351783.jpg",
+              "RelativeDocumentMoniker": "ARJOU_V001\\wwwroot\\images\\20241030083351783.jpg",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\wwwroot\\images\\20241030083351783.jpg - Bitmap [703x1000, 24 bit, JPG]",
+              "RelativeToolTip": "ARJOU_V001\\wwwroot\\images\\20241030083351783.jpg - Bitmap [703x1000, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-11-13T04:10:50.953Z",
+              "EditorCaption": " - Bitmap [703x1000, 24 bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Edit.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Views\\Pedidos\\Edit.cshtml",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Edit.cshtml",
               "RelativeToolTip": "ARJOU_V001\\Views\\Pedidos\\Edit.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAIBJwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAIwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T04:17:27.638Z"
+              "WhenOpened": "2024-10-30T04:17:27.638Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "dbo.AspNetUsers.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_User/sa/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_User/sa/SqlTable/dbo.AspNetUsers.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-30T04:06:06.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Index.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Views\\Pedidos\\Index.cshtml",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Index.cshtml",
               "RelativeToolTip": "ARJOU_V001\\Views\\Pedidos\\Index.cshtml",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAwGYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T04:03:25.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T04:03:25.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "20241030023312_Mig00.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Migrations\\20241030023312_Mig00.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Migrations\\20241030023312_Mig00.cs",
@@ -205,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Controllers\\HomeController.cs",
@@ -217,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Startup.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Startup.cs",
@@ -229,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "dbo.User.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Pedido/sa/SqlTable/dbo.User.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Pedido/sa/SqlTable/dbo.User.sql",
@@ -238,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PedidoVM.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\ViewModels\\PedidoVM.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\ViewModels\\PedidoVM.cs",
@@ -250,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Models\\Pedido.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Models\\Pedido.cs",
@@ -262,19 +238,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PedidosController.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Controllers\\PedidosController.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Controllers\\PedidosController.cs",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "ARJOU_V001\\Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAAwB0BAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABwBAAAAAAAAAAAAwEUBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T15:44:25.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "IdentityHostingStartup.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Areas\\Identity\\IdentityHostingStartup.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Areas\\Identity\\IdentityHostingStartup.cs",
@@ -286,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -298,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "dbo.AspNetUserRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Users/sa/SqlTable/dbo.AspNetUserRoles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/Desktop_R9KJNJF/211185_ARJOU_Users/sa/SqlTable/dbo.AspNetUserRoles.sql",
@@ -307,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -319,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -331,19 +307,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Details.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Views\\Pedidos\\Details.cshtml",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Details.cshtml",
               "RelativeToolTip": "ARJOU_V001\\Views\\Pedidos\\Details.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAIBJwEcAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwFQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T04:37:24.991Z"
+              "WhenOpened": "2024-10-26T04:37:24.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Areas\\Identity\\Pages\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Areas\\Identity\\Pages\\_LoginPartial.cshtml",
@@ -355,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Areas\\Identity\\Data\\User.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\Areas\\Identity\\Data\\User.cs",
@@ -367,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ARJOU_V001\\ScaffoldingReadMe.txt",
@@ -379,31 +356,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ARJOU_V001\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAD4v2QAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-25T14:17:58.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Create.cshtml",
               "RelativeDocumentMoniker": "ARJOU_V001\\Views\\Pedidos\\Create.cshtml",
               "ToolTip": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\Views\\Pedidos\\Create.cshtml",
               "RelativeToolTip": "ARJOU_V001\\Views\\Pedidos\\Create.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-25T14:00:30.852Z"
+              "WhenOpened": "2024-10-25T14:00:30.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PedidoBuscaVM.cs",
               "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\ARJOU\\ARJOU_V001\\ARJOU_V001\\ViewModels\\PedidoBuscaVM.cs",
               "RelativeDocumentMoniker": "ARJOU_V001\\ViewModels\\PedidoBuscaVM.cs",

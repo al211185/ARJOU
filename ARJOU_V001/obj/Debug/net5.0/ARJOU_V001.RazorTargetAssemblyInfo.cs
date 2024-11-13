@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("ARJOU_V001")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37867c109a8e086b6bba9f6793aaa12eb8a90439")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ARJOU_V001.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

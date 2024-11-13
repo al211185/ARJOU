@@ -1,99 +1,148 @@
 ﻿@model ARJOU_V001.Models.Pedido
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Pedido";
 }
 
-<h1>Edit</h1>
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-4">@ViewData["Title"]</h1>
 
-<h4>Pedido</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <label asp-for="Id">ID:</label>
-            <input asp-for="Id" readonly />
-            <div class="form-group">
-                <label asp-for="EstiloDeseado" class="control-label"></label>
-                <select asp-for="EstiloDeseado" class="form-control">
-                    <option value="">Seleccione</option>
-                    <option value="Estilizada">Estilizada</option>
-                    <option value="Estructural">Estructural</option>
-                </select>
-                <span asp-validation-for="EstiloDeseado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ColorDeseado" class="control-label"></label>
-                <input asp-for="ColorDeseado" class="form-control" />
-                <span asp-validation-for="ColorDeseado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LongitudDeseada" class="control-label"></label>
-                <input asp-for="LongitudDeseada" class="form-control" />
-                <span asp-validation-for="LongitudDeseada" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DescripcionAdicional" class="control-label"></label>
-                <input asp-for="DescripcionAdicional" class="form-control" />
-                <span asp-validation-for="DescripcionAdicional" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImagenReferencia" class="control-label"></label>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-                <!-- Mostrar la imagen actual si existe -->
-                @if (!string.IsNullOrEmpty(Model.ImagenReferencia))
+                <div class="form-group mb-3">
+                    <label asp-for="Id" class="control-label">ID:</label>
+                    <input asp-for="Id" class="form-control" readonly />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="EstiloDeseado" class="control-label">Estilo Deseado</label>
+                    <select asp-for="EstiloDeseado" class="form-control form-control-lg">
+                        <option value="">Seleccione</option>
+                        <option value="Estilizada">Estilizada</option>
+                        <option value="Estructural">Estructural</option>
+                    </select>
+                    <span asp-validation-for="EstiloDeseado" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ColorDeseado" class="control-label">Color Deseado</label>
+                    <input asp-for="ColorDeseado" class="form-control form-control-lg" />
+                    <span asp-validation-for="ColorDeseado" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="LongitudDeseada" class="control-label">Longitud Deseada</label>
+                    <input asp-for="LongitudDeseada" class="form-control form-control-lg" />
+                    <span asp-validation-for="LongitudDeseada" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="DescripcionAdicional" class="control-label">Descripción Adicional</label>
+                    <input asp-for="DescripcionAdicional" class="form-control form-control-lg" />
+                    <span asp-validation-for="DescripcionAdicional" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ImagenReferencia" class="control-label">Imagen de Referencia</label>
+                    @if (!string.IsNullOrEmpty(Model.ImagenReferencia))
+                    {
+                        <div>
+                            <p>Imagen actual:</p>
+                            <img src="~/images/@Model.ImagenReferencia" alt="Imagen de Referencia" class="img-thumbnail" style="max-height: 150px;" />
+                        </div>
+                    }
+                    <div class="custom-file mt-2">
+                        <input type="file" name="Referencia" class="custom-file-input" id="customFile" />
+                        <label class="custom-file-label" for="customFile">Agregar nueva imagen de referencia</label>
+                    </div>
+                    <input type="hidden" asp-for="ImagenReferencia" value="@Model.ImagenReferencia" />
+                    <span asp-validation-for="ImagenReferencia" class="text-danger"></span>
+                </div>
+
+                @if (!User.IsInRole("Usuario"))
                 {
-                    <div>
-                        <p>Imagen actual:</p>
-                        <img src="~/images/@Model.ImagenReferencia" alt="Imagen de Referencia" style="max-height: 100px;" />
+                    <div class="form-group mb-3">
+                        <label asp-for="FechaSolicitud" class="control-label">Fecha de Solicitud</label>
+                        <input asp-for="FechaSolicitud" class="form-control form-control-lg" readonly />
+                        <span asp-validation-for="FechaSolicitud" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="PrecioEstimado" class="control-label">Precio Estimado</label>
+                        <input asp-for="PrecioEstimado" class="form-control form-control-lg" />
+                        <span asp-validation-for="PrecioEstimado" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Estado" class="control-label">Estado</label>
+                        <select asp-for="Estado" class="form-control form-control-lg">
+                            <option value="Cotizando">Cotizando</option>
+                            <option value="EsperandoConfirmacion">Esperando Confirmación</option>
+                            <option value="Peinando">Peinando</option>
+                            <option value="Estructurando">Estructurando</option>
+                            <option value="Estilizando">Estilizando</option>
+                            <option value="Finalizada">Finalizada</option>
+                        </select>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
                     </div>
                 }
-                <!-- Campo para cargar una nueva imagen -->
-                <input type="file" name="Referencia" class="form-control" />
 
-                <!-- Campo oculto para almacenar la imagen existente si no se cambia -->
-                <input type="hidden" asp-for="ImagenReferencia" value="@Model.ImagenReferencia" />
+                <div class="text-center mt-4">
+                    <input type="submit" value="Guardar Cambios" class="btn btn-dark btn-lg px-5 py-2" />
+                </div>
+            </form>
 
-
-                <span asp-validation-for="ImagenReferencia" class="text-danger"></span>
+            <div class="text-center mt-3">
+                <a asp-action="Index" class="btn btn-outline-dark">Regresar a la lista</a>
             </div>
-
-            @if (!User.IsInRole("Usuario"))
-            {
-                <div class="form-group">
-                    <label asp-for="FechaSolicitud" class="control-label"></label>
-                    <input asp-for="FechaSolicitud" class="control-label" readonly />
-                    <span asp-validation-for="FechaSolicitud" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="PrecioEstimado" class="control-label"></label>
-                    <input asp-for="PrecioEstimado" class="form-control" />
-                    <span asp-validation-for="PrecioEstimado" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Estado" class="control-label"></label>
-                    <select asp-for="Estado" class="form-control" />
-                    <option value="Cotizando">Cotizando</option>
-                    <option value="EsperandoConfirmacion">Esperando confirmación</option>
-                    <option value="Peinando">Peinando</option>
-                    <option value="Estrcturando">Estructurando</option>
-                    <option value="Estilizando">Estilizando</option>
-                    <option value="Finalizada">Finalizada</option>
-                </div>
-            }
-
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label")
+                .addClass("selected").html(fileName);
+        });
+    </script>
 }
+
+<style>
+    .container h1 {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control-lg {
+        height: calc(2.5rem + 2px);
+    }
+
+    .btn-dark, .btn-outline-dark {
+        background-color: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+        .btn-outline-dark:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+    .btn-lg {
+        font-size: 1.25rem;
+    }
+
+    .custom-file-input ~ .custom-file-label::after {
+        content: "Subir";
+        color: #fff;
+        background-color: #000;
+    }
+</style>

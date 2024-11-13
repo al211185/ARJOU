@@ -6,29 +6,110 @@
     <title>@ViewData["Title"] - ARJOU_V001</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        /* Fondo y estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo del header */
+        header {
+            background-color: #fff; /* Blanco para el fondo */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        .navbar {
+            padding: 10px 0; /* Espaciado en el navbar */
+        }
+
+        .navbar-brand {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000; /* Color negro para el nombre */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+            .navbar-brand:hover {
+                color: #000; /* Color negro al pasar el ratón */
+            }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Centra los elementos dentro de la barra de navegación */
+        }
+
+            .navbar-nav .nav-item {
+                display: inline-block;
+                margin: 0 20px; /* Espaciado entre los elementos */
+            }
+
+            .navbar-nav .nav-link {
+                color: #000 !important;
+                font-size: 16px;
+                font-weight: 500;
+                transition: color 0.3s ease, background-color 0.3s ease;
+            }
+
+                .navbar-nav .nav-link:hover {
+                    color: #fff !important;
+                    background-color: #000; /* Fondo negro al pasar el ratón */
+                    border-radius: 20px;
+                }
+
+        .navbar-toggler {
+            border-color: #000; /* Borde negro para el botón de navegación */
+        }
+
+        /* Estilo del footer */
+        footer {
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+            footer a {
+                color: #fff; /* Enlaces en blanco */
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline; /* Subrayado al pasar el ratón */
+                }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ARJOU_V001</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ARJOU</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-
-                        @if (User.IsInRole("Usuario"))
-                        {
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pedidos" asp-action="Index">Mis Pedidos</a>
-                        }
-                        else
-                        {
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pedidos" asp-action="Index">Pedidos</a>
-                        }
+                        <!-- Centrado del enlace de "Pedidos" -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            @if (User.IsInRole("Usuario"))
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Pedidos" asp-action="Index">Mis Pedidos</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Pedidos" asp-action="Index">Pedidos</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -36,17 +117,13 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - ARJOU_V001 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

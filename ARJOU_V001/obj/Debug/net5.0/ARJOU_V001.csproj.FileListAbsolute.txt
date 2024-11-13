@@ -195,3 +195,4 @@ C:\Users\DELL\Desktop\ARJOU\ARJOU_V001\ARJOU_V001\obj\Debug\net5.0\refint\ARJOU_
 C:\Users\DELL\Desktop\ARJOU\ARJOU_V001\ARJOU_V001\obj\Debug\net5.0\ARJOU_V001.pdb
 C:\Users\DELL\Desktop\ARJOU\ARJOU_V001\ARJOU_V001\obj\Debug\net5.0\ARJOU_V001.genruntimeconfig.cache
 C:\Users\DELL\Desktop\ARJOU\ARJOU_V001\ARJOU_V001\obj\Debug\net5.0\ref\ARJOU_V001.dll
+C:\Users\DELL\Desktop\ARJOU\ARJOU_V001\ARJOU_V001\obj\Debug\net5.0\ARJOU_V001.sourcelink.json
