@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Pedidos";
 }
-
 <div class="container mt-5">
     <h1 class="display-4 text-center mb-4" style="color: #333;">@ViewData["Title"]</h1>
 
@@ -12,7 +11,7 @@
     </div>
 
     <form asp-controller="Pedidos" asp-action="Index" method="get" class="mb-5">
-        <div class="row g-3 justify-content-center align-items-end">
+        <div class="row g-2 justify-content-center align-items-end">
             @if (!User.IsInRole("Usuario"))
             {
                 <div class="col-md-2">
@@ -77,22 +76,22 @@
                         <div class="d-flex justify-content-center gap-2">
                             @if (!User.IsInRole("Usuario"))
                             {
-                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-dark">Editar</a>
-                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">Detalles</a>
-                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-dark mx-1">Editar</a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark mx-1">Detalles</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger mx-1">Eliminar</a>
                             }
                             else
                             {
                                 if (!item.ConfirmadoPorUsuario)
                                 {
-                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-dark">Editar</a>
-                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">Detalles</a>
-                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-dark mx-1">Editar</a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark mx-1">Detalles</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger mx-1">Eliminar</a>
                                 }
                                 else
                                 {
-                                    <span class="badge bg-secondary">Confirmado</span>
-                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">Detalles</a>
+                                    <span class="badge bg-success">Confirmado</span>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark mx-1">Detalles</a>
                                 }
                             }
                         </div>
@@ -138,8 +137,17 @@
             color: #fff;
         }
 
-    /* Establece la misma altura para todos los campos de entrada */
     .input-height {
         height: calc(2.5rem + 2px); /* Ajusta la altura según tus necesidades */
     }
+
+    .gap-2 .badge {
+        font-size: 0.875rem;
+        padding: 0.5em 1em;
+    }
+
+    .badge.bg-success {
+        background-color: #28a745;
+    }
 </style>
+

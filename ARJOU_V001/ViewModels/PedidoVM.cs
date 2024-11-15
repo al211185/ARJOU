@@ -25,7 +25,8 @@ namespace ARJOU_V001.ViewModels
         [StringLength(500)]
         [Display(Name = "Descripción adicional")]
         public string DescripcionAdicional { get; set; }  // Ejemplo: Detalles sobre la peluca, como peinado específico o mezcla de colores
-
+        
+        
         [Display(Name = "Imagen de referencia")]
         //8
         public IFormFile Referencia { get; set; }

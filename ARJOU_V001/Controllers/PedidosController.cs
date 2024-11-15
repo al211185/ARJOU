@@ -149,6 +149,10 @@ namespace ARJOU_V001.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EstiloDeseado,ColorDeseado,LongitudDeseada,DescripcionAdicional,PrecioEstimado,FechaSolicitud,Estado")] PedidoVM pedidoVM, IFormFile Referencia)
         {
+            if (Referencia == null || Referencia.Length == 0)
+            {
+                ModelState.AddModelError("Referencia", "La imagen de referencia es obligatoria.");
+            }
             if (ModelState.IsValid)
             {
                 //Obtener el UserId del usuario actual
